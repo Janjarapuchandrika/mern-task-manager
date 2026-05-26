@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "Task Manager API",
+    "_postman_id": "123456",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Tasks",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/tasks"
+      }
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Sample Task\", \"description\": \"Complete MERN assignment\", \"dueDate\": \"2026-12-31\"}"
+        },
+        "url": "http://localhost:5000/api/tasks"
+      }
+    }
+  ]
+}
